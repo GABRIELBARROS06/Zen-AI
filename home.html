@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zen-AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="home.js" defer></script>
     <script>
           tailwind.config = {
             theme: {
@@ -33,11 +34,14 @@
     </header>
 
     <main class="ml-96 mt-10">
-        <input classtype="text" disabled class="" style="width: 30vw; height: 50vh; background-color: #2815A0;">
-        <input type="text" disabled class="" style="width: 30vw; height: 50vh; background-color: #2815A0;">
+        <textarea name="" id="pt" cols="30" rows="10" style="width: 30vw; height: 50vh; color: white; background-color: #2815A0;" disabled></textarea>
+        <textarea name="" id="eng" cols="30" rows="10" style="width: 30vw; height: 50vh; color: white; background-color: #2815A0;" disabled></textarea>
     </main>
-    <footer>
-        <input type="text" class="bg-slate-150 mt-36" placeholder="DIGITE SUA PERGUNTA" style="width: 80vw; height: 5vh; position: relative; left: 10%; background-color: #2D49DA;">
+    <footer class="flex">
+        <input type="text" class="pergunta bg-slate-150 mt-36" placeholder="DIGITE SUA PERGUNTA" id="ask--user" style="width: 80vw; height: 5vh; position: relative; left: 10%; background-color: #2D49DA;">
+        <button class="w-10 h-10 bg-blue-950 ml-56 mt-36" id="send--question">
+            <img class="" src="./icons/up-arrow.png" alt="">
+        </button>
     </footer>
 </body>
 </html>

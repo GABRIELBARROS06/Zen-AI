@@ -7,3 +7,7 @@
 h1{
     font-family: "Holtwood One SC", serif;
 }
+
+.pergunta > ::placeholder{
+    margin-left: 10px;
+}
